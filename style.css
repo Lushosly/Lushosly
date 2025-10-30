@@ -88,3 +88,18 @@ footer {
     color: white;
     margin-top: 4rem;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+}
