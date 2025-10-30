@@ -103,3 +103,9 @@ header {
 body {
     padding-top: 80px;
 }
+
+nav a.active {
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 3px;
+}
