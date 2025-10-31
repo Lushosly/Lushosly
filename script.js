@@ -17,3 +17,17 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+
+  // Animate hamburger lines
+  hamburger.classList.toggle("open");
+
+  // Update aria-expanded
+  const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+  hamburger.setAttribute("aria-expanded", !expanded);
+});
