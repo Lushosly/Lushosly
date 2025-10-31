@@ -289,3 +289,73 @@ nav a.active {
     line-height: 1.5;
     color: #555;
 }
+
+/* ===== RESUME SECTION ===== */
+#resume {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+#resume h2 {
+    color: #0a192f;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.resume-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.resume-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.resume-highlights {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.resume-highlights li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.resume-graphic img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.resume-graphic img:hover {
+    transform: scale(1.05);
+}
+
+#resume .btn {
+    background: #0a192f;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+#resume .btn:hover {
+    background: #64ffda;
+    color: #0a192f;
+}
+
