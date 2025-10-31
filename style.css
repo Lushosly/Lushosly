@@ -17,6 +17,11 @@ header {
     padding: 1rem 2rem;
 }
 
+header nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,7 +43,7 @@ nav a {
     font-weight: 500;
 }
 
-header {
+ {
     background: rgba(10, 25, 47, 0.9);
     backdrop-filter: blur(8px);
     color: #fff;
@@ -163,6 +168,8 @@ nav a.active {
 
 .hero-content {
     max-width: 700px;
+    padding: 0 1rem;
+    margin: auto;
     animation: fadeInUp 1.5s ease;
 }
 
