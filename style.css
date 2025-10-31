@@ -336,15 +336,6 @@ nav a.active {
     font-size: 1rem;
 }
 
-.resume-graphic img {
-    width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.resume-graphic img:hover {
-    transform: scale(1.05);
 }
 
 #resume .btn {
