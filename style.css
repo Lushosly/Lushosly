@@ -517,3 +517,52 @@ nav a.active {
     color: white;
     transform: scale(1.05);
 }
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Show hamburger on mobile only */
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(10,25,47,0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 2rem;
+        border-radius: 0 0 8px 8px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.75rem 0;
+    }
+}
