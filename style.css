@@ -81,6 +81,37 @@ nav ul li a:hover {
     color: #64ffda;
 }
 
+/* ===== NAVIGATION RESPONSIVE ===== */
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Desktop / large screens */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* Mobile / small screens */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    }
+}
 
 #hero {
     background: linear-gradient(to right, #0a192f, #112240);
