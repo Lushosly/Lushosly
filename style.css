@@ -501,3 +501,26 @@ footer {
     background-position: 0% 50%;
   }
 }
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #contact .contact-links {
+    gap: 1.5rem;
+  }
+
+  #resume .resume-container {
+    align-items: flex-start;
+  }
+
+  #resume .resume-text {
+    max-width: 700px;
+  }
+
+  footer {
+    font-size: 0.95rem;
+  }
+}
