@@ -6,7 +6,7 @@ I’m a software engineer and citizen developer with a B.Sc. in Computer Science
 ---
 
 ## 🛠 Skills
-- **Programming Languages:** Java, SQL, Python, JavaScript, HTML, CSS 
+- **Programming Languages:** Java, SQL, Python, C++, C#, JavaScript, HTML, CSS 
 - **Tools & Platforms:** Microsoft 365, Power Apps, Power Automate, Power BI, IBM Cognos, Microsoft Copilot, AI Agents, Advanced Excel 
 - **Languages:** Spanish (Fluent), English (Fluent) 
 - **Other:** Strong problem-solving, project management, business analysis 
