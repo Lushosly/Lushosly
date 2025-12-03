@@ -1,33 +1,58 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+// Typewriter Effect Data
+const texts = ["Intelligent Systems.", "AI Agents.", "Fintech Solutions.", "Automation Pipelines."];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 80;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
+// IIFE for Typewriter
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
 
-  navLinks.forEach((link)=> {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-});
+  const typeWriterElement = document.getElementById("typewriter");
+  if (typeWriterElement) {
+    typeWriterElement.textContent = letter;
+  }
 
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    // Pause before deleting or moving to next word (simplified for loop)
+    setTimeout(type, 2000); 
+  } else {
+    setTimeout(type, 100);
+  }
+})();
+
+// Hamburger Menu Logic
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("nav ul");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+    hamburger.setAttribute("aria-expanded", !expanded);
+  });
+}
 
-  // Animate hamburger lines
-  hamburger.classList.toggle("open");
+// Close mobile menu when a link is clicked
+document.querySelectorAll("nav ul li a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
 
-  // Update aria-expanded
-  const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
-  hamburger.setAttribute("aria-expanded", !expanded);
+// Smooth Scroll for older browsers (optional, CSS scroll-behavior usually handles this)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
