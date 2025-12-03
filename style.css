@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Fixes header overlapping content */
+}
+
 body {
   background-color: var(--navy);
   color: var(--slate);
@@ -34,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(10, 25, 47, 0.85);
+  background: rgba(10, 25, 47, 0.95); /* Slightly darker for better contrast */
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
@@ -49,6 +54,11 @@ header {
   font-size: 1.5rem;
 }
 
+.logo .dot {
+  color: var(--white);
+}
+
+/* DESKTOP NAV (Default) */
 nav ul {
   display: flex;
   align-items: center;
@@ -58,6 +68,7 @@ nav ul {
 nav ul li a {
   color: var(--lightest-slate);
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 nav ul li a:hover { color: var(--green); }
@@ -67,10 +78,30 @@ nav ul li a:hover { color: var(--green); }
   color: var(--green);
   padding: 8px 16px;
   border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .btn-resume:hover {
   background: rgba(100, 255, 218, 0.1);
+}
+
+/* HAMBURGER (Hidden on Desktop) */
+.hamburger {
+  display: none; /* Crucial: Hides it on big screens */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--green);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* ===== HERO SECTION ===== */
@@ -94,8 +125,9 @@ nav ul li a:hover { color: var(--green); }
 
 #hero h1 {
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--light-slate);
+  color: var(--white);
   line-height: 1.1;
+  font-weight: 800;
 }
 
 #hero h2 {
@@ -103,28 +135,39 @@ nav ul li a:hover { color: var(--green); }
   color: var(--slate);
   line-height: 1.1;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero-desc {
   max-width: 500px;
   font-size: 1.1rem;
   margin-bottom: 50px;
+  color: var(--slate);
 }
 
-.hero-buttons { display: flex; gap: 20px; }
+.hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
 
 .btn {
   color: var(--navy);
   background-color: var(--green);
-  padding: 1.25rem 1.75rem;
+  padding: 1rem 1.75rem;
   border-radius: 4px;
   font-weight: 600;
+  border: 1px solid var(--green);
+}
+
+.btn:hover {
+  background-color: rgba(100, 255, 218, 0.8);
 }
 
 .btn-outline {
   background: transparent;
   border: 1px solid var(--green);
   color: var(--green);
+}
+
+.btn-outline:hover {
+  background: rgba(100, 255, 218, 0.1);
 }
 
 /* ===== SKILLS SECTION ===== */
@@ -135,11 +178,12 @@ nav ul li a:hover { color: var(--green); }
 }
 
 #skills h2, #projects h2, #contact h2 {
-  font-size: 2rem;
-  color: var(--light-slate);
+  font-size: clamp(26px, 5vw, 32px);
+  color: var(--white);
   margin-bottom: 40px;
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 
 #skills h2::after, #projects h2::after, #contact h2::after {
@@ -159,21 +203,23 @@ nav ul li a:hover { color: var(--green); }
 
 .skill-card {
   background: var(--light-navy);
-  padding: 20px;
+  padding: 25px;
   border-radius: 4px;
   transition: transform 0.2s;
   cursor: default;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .skill-card:hover { transform: translateY(-5px); }
 
 .skill-card i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--green);
   margin-bottom: 20px;
 }
 
-.skill-card h3 { color: var(--light-slate); margin-bottom: 10px; }
+.skill-card h3 { color: var(--white); margin-bottom: 10px; font-weight: 600; }
+.skill-card p { font-size: 0.9rem; }
 
 /* ===== PROJECTS SECTION ===== */
 #projects { padding: 100px 50px; max-width: 1000px; margin: 0 auto; }
@@ -181,7 +227,7 @@ nav ul li a:hover { color: var(--green); }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+  gap: 25px;
 }
 
 .project-card {
@@ -192,6 +238,7 @@ nav ul li a:hover { color: var(--green); }
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
 .project-card:hover { transform: translateY(-7px); }
@@ -204,24 +251,33 @@ nav ul li a:hover { color: var(--green); }
   font-size: 1.5rem;
 }
 
-.project-card h3 {
+.project-links a {
   color: var(--light-slate);
+  margin-left: 10px;
+}
+
+.project-links a:hover { color: var(--green); }
+
+.project-card h3 {
+  color: var(--white);
   font-size: 1.4rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .project-card p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin-bottom: 20px;
   flex-grow: 1;
 }
 
 .tech-stack {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--slate);
+  color: var(--light-slate);
 }
 
 /* ===== CONTACT & FOOTER ===== */
@@ -234,47 +290,56 @@ nav ul li a:hover { color: var(--green); }
 
 #contact h2 { justify-content: center; }
 #contact h2::after { display: none; }
-
-#contact p { margin-bottom: 50px; }
+#contact p { margin-bottom: 50px; font-size: 1.1rem; }
 
 footer {
   text-align: center;
   padding: 20px;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--slate);
+  color: var(--light-slate);
+  margin-bottom: 20px;
 }
 
-/* ===== MOBILE ===== */
+/* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 40px; }
-  .hero-content h2 { font-size: 30px; }
+  /* Header Adjustments */
+  header { padding: 0 25px; }
+
+  /* Hero Adjustments */
+  #hero { padding: 0 25px; }
+  #hero h1 { font-size: 40px; }
+  #hero h2 { font-size: 30px; }
   
+  /* Show Hamburger */
+  .hamburger { display: block; }
+
+  /* Hide Desktop Nav & Style Mobile Nav */
   nav ul {
-    display: none; /* Add JS to toggle this */
+    display: none; /* Hidden by default */
     flex-direction: column;
     position: absolute;
     top: 80px;
     right: 0;
     width: 100%;
+    height: auto;
     background: var(--light-navy);
-    padding: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    border-bottom: 2px solid var(--green);
   }
   
+  /* The 'active' class is added by JS when clicked */
   nav ul.active { display: flex; }
 
-  .hamburger {
-    display: block;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+  nav ul li { margin: 15px 0; width: 100%; text-align: center; }
+  nav ul li a { display: block; font-size: 1.1rem; }
 
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--green);
-    margin: 5px;
+  /* Section Adjustments */
+  #skills, #projects, #contact { padding: 80px 25px; }
+  
+  #skills h2::after, #projects h2::after {
+    width: 100%; /* Full width line on mobile */
+    margin-left: 10px;
   }
 }
