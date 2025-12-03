@@ -1,42 +1,33 @@
-# Hi, I’m Luis J. Rodriguez Espinal
-**Software Engineer | Automation & AI Enthusiast** 
-
-I’m a software engineer and citizen developer with a B.Sc. in Computer Science and pursuing an MBA in Finance. I specialize in designing **automated workflows, AI-driven solutions, and business applications** that drive efficiency and impact. 
-
----
-
-## 🛠 Skills
-- **Programming Languages:** Java, SQL, Python, C++, C#, JavaScript, HTML, CSS 
-- **Tools & Platforms:** Microsoft 365, Power Apps, Power Automate, Power BI, IBM Cognos, Microsoft Copilot, AI Agents, Advanced Excel 
-- **Languages:** Spanish (Fluent), English (Fluent) 
-- **Other:** Strong problem-solving, project management, business analysis 
-
----
-
-## 📫 Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/luis-j-rodriguez-espinal-a35447312) 
-
----
-
-## 🌱 Currently Learning
-- Advanced AI integrations in Power Platform 
-- Full-stack development for enterprise applications
-
----
-
-### 💻 Languages
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-
-### ⚙️ Tools & Platforms
-![Power%20Apps](https://img.shields.io/badge/Power_Apps-742774?style=for-the-badge&logo=powerapps)
-![Power%20Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge&logo=powerautomate)
-![Power%20BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Copilot](https://img.shields.io/badge/Microsoft_Copilot-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-![AI%20Agents](https://img.shields.io/badge/AI_Agents-20232A?style=for-the-badge&logo=openai&logoColor=white)
-
-
+Hi there, I'm Luis Rodriguez Espinal 
+Software Engineer | AI Solutions & Fintech Automation
+<a href="https://www.linkedin.com/in/luis-j-rodriguez-espinal-a35447312">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite" />
+</a>
+<a href="https://lushosly.github.io/Lushosly/">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Portfolio-Visit%2520Site-64ffda%3Fstyle%3Dfor-the-badge%26logo%3Dfirefox%26logoColor%3Dblack" />
+</a>
+ About Me
+I am a Software Engineer with a unique background: a B.Sc. in Computer Science paired with an MBA in Finance.
+I specialize in bridging the gap between business strategy and technical execution. My work focuses on replacing legacy manual workflows with intelligent, scalable architectures using Python, Generative AI, and Enterprise APIs.
+•  I’m currently building: TaskFlow AI, an intelligent backend for banking operations.
+•  I specialize in: Fintech Automation, RAG Architectures, and System Integration.
+•  I’m currently learning: Advanced AI Agents & Azure OpenAI Service.
+ Tech Stack
+Languages & Core Logic
+AI & Automation
+Tools & Frameworks
+ Featured Engineering
+🔹 TaskFlow AI
+• Description: Backend microservice that classifies banking emails & extracts financial entities using LLMs.
+• Stack: Python Flask Gemini API
+🔹 SmartForm Assistant (Coming Soon)
+• Description: Automated invoice digitization pipeline using OCR and SQL storage.
+• Stack: Azure AI SQL Python
+🔹 FinTrack Pro (Coming Soon)
+• Description: Financial dashboard for visualizing delinquency trends and risk metrics.
+• Stack: JavaScript Chart.js
+ GitHub Stats
+<p align="left">
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dlushosly%26show_icons%3Dtrue%26theme%3Domni%26hide_border%3Dtrue" alt="Luis's Github Stats" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3Dlushosly%26layout%3Dcompact%26theme%3Domni%26hide_border%3Dtrue" alt="Top Languages" />
+</p>
