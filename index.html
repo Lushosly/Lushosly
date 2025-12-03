@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luis Rodriguez Espinal - Software Engineer Portfolio</title>
+  <title>Luis Rodriguez | AI Solutions Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <!-- ===== HEADER ===== -->
   <header>
     <nav aria-label="Main Navigation">
-      <h1>Luis Rodriguez Espinal</h1>
+      <div class="logo">LR<span class="dot">.</span></div>
 
       <!-- Hamburger button for mobile -->
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -24,9 +26,10 @@
       <!-- Navigation links -->
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/LuisRodriguezEspinal_Resume.pdf" target="_blank" class="btn-resume">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -35,186 +38,129 @@
     <!-- ===== HERO SECTION ===== -->
     <section id="hero">
       <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">Luis Rodriguez Espinal</span></h1>
-        <h2>Software Engineer | AI & Automation Developer</h2>
-        <p>
-          I design intelligent software solutions using Python, JavaScript, and modern web technologies — integrating
-          AI-driven and traditional automation to solve complex business challenges.
+        <p class="mono-text">Hi, my name is</p>
+        <h1>Luis Rodriguez Espinal.</h1>
+        <h2 class="typing-text">I build <span id="typewriter"></span></h2>
+        <p class="hero-desc">
+          I am a Software Engineer specializing in <strong>Intelligent Automation</strong> and <strong>Fintech Solutions</strong>. 
+          I bridge the gap between business strategy and technical execution using Python, AI Agents, and Enterprise Integrations.
         </p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="#projects" class="btn">View Architecture</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <img src="assets/profile-photo.png" alt="Luis Rodriguez Espinal" class="profile-pic" />
-        <div class="about-text">
-          <p>
-            Hi, I'm <strong>Luis Rodriguez Espinal</strong> — a Software Engineer and AI Solutions & Intelligent Automation passionate about
-            building intelligent systems that solve real-world problems.
-          </p>
-
-          <p>
-            I specialize in creating software solutions using Python, JavaScript, and modern web technologies, integrating both AI-driven automation and traditional workflow automation to improve efficiency and business impact. I enjoy designing scalable, maintainable systems and continuously exploring emerging technologies to deliver innovative, high-quality solutions.
-          </p>
-
-          <a href="#projects" class="btn">View My Projects</a>
+    <!-- ===== SKILLS SECTION (New) ===== -->
+    <section id="skills">
+      <h2>Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python & AI</h3>
+          <p>Flask, Pandas, OpenAI API, LangChain, Azure AI</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-robot"></i>
+          <h3>Automation</h3>
+          <p>Power Automate, Custom Connectors, RPA, UiPath</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Backend</h3>
+          <p>SQL, APIs (REST), Cloud Functions, System Design</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>Business</h3>
+          <p>MBA Finance, Process Optimization, Risk Analysis</p>
         </div>
       </div>
     </section>
 
     <!-- ===== PROJECTS SECTION ===== -->
-<section id="projects">
-  <h2>Projects</h2>
+    <section id="projects">
+      <h2>Featured Engineering</h2>
+      <div class="projects-grid">
 
-  <p class="projects-intro">
-    A curated selection of personal projects showcasing my skills in software engineering, automation, and AI integration.
-  </p>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <article class="project-card">
-      <div class="project-img">
-        <img src="assets/taskflow-ai.png" alt="TaskFlow AI Project Preview" />
-      </div>
-      <div class="project-content">
-        <h3>TaskFlow AI</h3>
-        <p>
-          An AI-powered workflow manager that automates repetitive business processes using Python, Power Automate, and OpenAI APIs. 
-          Designed to streamline daily office tasks such as email classification, report generation, and alerts.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/lushosly/taskflow-ai" target="_blank" class="btn-sm">GitHub</a>
-          <a href="#" class="btn-sm btn-outline">Live Demo</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 2 -->
-    <article class="project-card">
-      <div class="project-img">
-        <img src="assets/caribex-portal.png" alt="CaribeX Systems Portal" />
-      </div>
-      <div class="project-content">
-        <h3>CaribeX Systems Portal</h3>
-        <p>
-          A professional company landing page and client portal prototype for CaribeX Systems. Built with HTML, CSS, and JavaScript to
-          demonstrate responsive UI, navigation, and lead capture form features for software consulting services.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/lushosly/caribex-portal" target="_blank" class="btn-sm">GitHub</a>
-          <a href="#" class="btn-sm btn-outline">Live Demo</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 3 -->
-    <article class="project-card">
-      <div class="project-img">
-        <img src="assets/fintrack-pro.png" alt="FinTrack Pro Dashboard" />
-      </div>
-      <div class="project-content">
-        <h3>FinTrack Pro</h3>
-        <p>
-          A Python-based finance dashboard that visualizes personal and business financial metrics using Flask, SQLite, and Chart.js.
-          Designed to provide insights on income, expenses, and performance trends.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/lushosly/fintrack-pro" target="_blank" class="btn-sm">GitHub</a>
-          <a href="#" class="btn-sm btn-outline">Live Demo</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 4 -->
-    <article class="project-card">
-      <div class="project-img">
-        <img src="assets/smartform-ai.png" alt="SmartForm AI Assistant" />
-      </div>
-      <div class="project-content">
-        <h3>SmartForm AI Assistant</h3>
-        <p>
-          A document automation assistant that reads PDF forms and extracts key information using JavaScript, Azure AI, and Python.
-          Simulates invoice and receipt processing for business workflows.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/lushosly/smartform-ai" target="_blank" class="btn-sm">GitHub</a>
-          <a href="#" class="btn-sm btn-outline">Live Demo</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 5 -->
-    <article class="project-card">
-      <div class="project-img">
-        <img src="assets/portfolio-preview.png" alt="Portfolio Website" />
-      </div>
-      <div class="project-content">
-        <h3>Portfolio Website</h3>
-        <p>
-          This website — a responsive personal portfolio built from scratch using HTML, CSS, and JavaScript.
-          Designed to showcase my projects, experience, and background as a Software Engineer and AI Solutions & Intelligent Automation.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/lushosly/lushosly.github.io" target="_blank" class="btn-sm">GitHub</a>
-          <a href="https://lushosly.github.io/Lushosly/" target="_blank" class="btn-sm btn-outline">Live Demo</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-    <!-- ===== RESUME SECTION ===== -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <div class="resume-container">
-        <div class="resume-text">
+        <!-- Project 1: TaskFlow AI (The Hero Project) -->
+        <article class="project-card featured">
+          <div class="project-header">
+            <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/lushosly/taskflow-ai" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>TaskFlow AI Engine</h3>
           <p>
-            With a background in <strong>Computer Science</strong> and an <strong>MBA in Finance</strong>, I combine
-            technical expertise and business strategy to create impactful software and automation solutions. I've
-            designed intelligent workflows, AI-driven tools, and full-stack web projects that enhance productivity and
-            decision-making.
+            A backend microservice that uses <strong>Generative AI (Gemini/OpenAI)</strong> to classify unstructured banking emails and extract financial entities (Amounts, Dates). Designed to replace fragile Regex parsers in legacy workflows.
           </p>
-
-          <ul class="resume-highlights">
-            <li>Experienced with Python, Java, JavaScript, C#, Power Platform, and AI integration</li>
-            <li>Focused on automation, web development, and scalable software systems</li>
-            <li>Passionate about continuous learning, problem-solving, and innovation</li>
+          <ul class="tech-stack">
+            <li>Python</li>
+            <li>Flask API</li>
+            <li>LLMs</li>
+            <li>JSON</li>
           </ul>
+        </article>
 
-          <a href="assets/LuisRodriguezEspinal_Resume.pdf" class="btn" target="_blank">Download My Resume</a>
-        </div>
+        <!-- Project 2: SmartForm Assistant -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>SmartForm Assistant</h3>
+          <p>
+            An automated document processing pipeline utilizing <strong>Azure AI Document Intelligence</strong> to digitize invoices. Automates data entry into SQL databases, reducing manual error rates by 90%.
+          </p>
+          <ul class="tech-stack">
+            <li>Azure AI</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Automation</li>
+          </ul>
+        </article>
+
+        <!-- Project 3: FinTrack Pro -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>FinTrack Dashboard</h3>
+          <p>
+            A financial analytics dashboard built with JavaScript and Chart.js that visualizes delinquency trends. Features API integrations with internal reporting tools for real-time risk assessment.
+          </p>
+          <ul class="tech-stack">
+            <li>JavaScript</li>
+            <li>APIs</li>
+            <li>Data Viz</li>
+          </ul>
+        </article>
+
       </div>
     </section>
 
     <!-- ===== CONTACT SECTION ===== -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Get In Touch</h2>
       <p>
-        Let's connect! Whether you're looking to collaborate, discuss AI automation, or just chat about tech — feel
-        free to reach out.
+        I am currently open to new opportunities in **AI Engineering** and **Software Development**. 
+        Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
-
-      <div class="contact-links">
-        <a href="mailto:luisjrodrigueze@gmail.com" class="contact-btn">Email</a>
-        <a href="https://linkedin.com/in/luisjrodriguezespinal" target="_blank" class="contact-btn">LinkedIn</a>
-        <a href="https://github.com/lushosly" target="_blank" class="contact-btn">GitHub</a>
-      </div>
+      <a href="mailto:luisjrodrigueze@gmail.com" class="btn">Say Hello</a>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Luis Rodriguez Espinal | Built with ❤️ using HTML, CSS, and JavaScript</p>
+    <p>Designed & Built by Luis Rodriguez Espinal</p>
   </footer>
 
-  <!-- ===== SCRIPT ===== -->
   <script src="script.js"></script>
 </body>
 </html>
