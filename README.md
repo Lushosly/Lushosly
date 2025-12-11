@@ -14,12 +14,19 @@ I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Fin
 ---
 
 ## 🚀 Featured Project
-- **[Galactic Conquest](https://lushosly.github.io/tactical-tic-tac-toe/)**:
-A strategic space combat simulation featuring a Self-Learning Alien AI.
+### **[TradeView Analytics](https://github.com/Lushosly/tradeview)**: An interactive financial dashboard that processes real-time market data.
+- The Logic: Uses Pandas for time-series analysis (SMA, Bollinger Bands, RSI) and Scikit-Learn logic for trend forecasting.
+- Stack: Python, Streamlit, Pandas, Plotly.
+- **[Launch Live Dashboard](https://tradeview-lusho.streamlit.app/#linear-regression-trend-projection)**
+- **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
+
+### **[Galactic Conquest](https://lushosly.github.io/tactical-tic-tac-toe/)**: A strategic space combat simulation featuring a Self-Learning Alien AI.
 - The Logic: The CPU implements reinforcement learning to analyze battlefield states, serializing match history to JSON to "remember" and counter player tactics.
 - The Stack: Python (Backend Logic), HTML/JS (Frontend Visualization), OOP.
 - **[Play the live demo](https://lushosly.github.io/tactical-tic-tac-toe/)**
 - **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
+
+---
 
 ## 📫 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/luis-j-rodriguez-espinal-a35447312)
