@@ -1,5 +1,5 @@
 // Typewriter Effect Data
-const texts = ["Intelligent Systems.", "AI Agents.", "Fintech Solutions.", "Automation Pipelines."];
+const texts = ["Intelligent Systems.", "AI Agents.", "Interactive Simulations.", "Fintech Solutions.", "Automation Pipelines.", "Strategic AI."];
 let count = 0;
 let index = 0;
 let currentText = "";
