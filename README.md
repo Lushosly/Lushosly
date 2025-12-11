@@ -1,17 +1,25 @@
 # Hi, I’m Luis J. Rodriguez Espinal
-**Software Engineer | AI Solutions & Fintech Automation** 
+**Software Engineer | AI Solutions | Algorithmic Logic & Simulation | Fintech Automation** 
 
 I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Finance**. I specialize in bridging the gap between business strategy and technical execution by building intelligent backends, AI-driven architectures, and scalable automated workflows. 
 
 ---
 
 ## 🛠 Skills
-- Core Engineering: Python (Flask/FastAPI), SQL, Java, JavaScript, REST APIs, C++
-- AI & Automation: Google Gemini API, OpenAI, RAG Architectures, Power Automate (Custom Connectors)
+- Core Engineering: Python (Flask/FastAPI), SQL, Java, JavaScript, REST APIs, C++, C#
+- AI & Automation: Google Gemini API, OpenAI, RAG Architectures, Power Automate (Custom Connectors), Reinforcement Learning (Q-Learning), Heuristic Search, State Management
 - Business: Financial Modeling, Risk Analysis, Process Optimization
 - Languages: Spanish (Fluent), English (Fluent)
 
 ---
+
+## 🚀 Featured Project
+- **[Galactic Conquest](https://lushosly.github.io/tactical-tic-tac-toe/)**:
+A strategic space combat simulation featuring a Self-Learning Alien AI.
+- The Logic: The CPU implements reinforcement learning to analyze battlefield states, serializing match history to JSON to "remember" and counter player tactics.
+- The Stack: Python (Backend Logic), HTML/JS (Frontend Visualization), OOP.
+- **[Play the live demo](https://lushosly.github.io/tactical-tic-tac-toe/)**
+- **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
 
 ## 📫 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/luis-j-rodriguez-espinal-a35447312)
@@ -22,6 +30,7 @@ I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Fin
 ## 🌱 Currently Learning
 - Advanced AI Agents & Orchestration
 - Azure OpenAI Service & Enterprise Security
+- C# & Unity for complex simulations
 
 ---
 
