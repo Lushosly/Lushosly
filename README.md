@@ -20,7 +20,7 @@ I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Fin
 - **[Launch Live Dashboard](https://tradeview-lusho.streamlit.app/#linear-regression-trend-projection)**
 - **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
 
-### **[Galactic Conquest](https://lushosly.github.io/tactical-tic-tac-toe/)**: A strategic space combat simulation featuring a Self-Learning Alien AI.
+### **[Galactic Conquest](https://github.com/Lushosly/tactical-tic-tac-toe)**: A strategic space combat simulation featuring a Self-Learning Alien AI.
 - The Logic: The CPU implements reinforcement learning to analyze battlefield states, serializing match history to JSON to "remember" and counter player tactics.
 - The Stack: Python (Backend Logic), HTML/JS (Frontend Visualization), OOP.
 - **[Play the live demo](https://lushosly.github.io/tactical-tic-tac-toe/)**
