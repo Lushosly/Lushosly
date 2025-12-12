@@ -20,6 +20,18 @@ I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Fin
 - **[Launch Live Dashboard](https://tradeview-lusho.streamlit.app/#linear-regression-trend-projection)**
 - **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
 
+### **[Quant-3D Option Matrix](https://github.com/Lushosly/tactical-tic-tac-toe)**: A financial engineering tool visualizing the Black-Scholes Model.
+- The Logic: Solves differential equations to calculate option greeks and renders a 3D volatility surface.
+- The Stack: Python, SciPy, Numpy, Plotly 3D
+- **[Launch Live Dashboard](https://option-matrix-lusho.streamlit.app/)**
+- **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
+
+### **[Algo-Race Engine](https://github.com/Lushosly/tactical-tic-tac-toe)**: A real-time algorithm visualizer demonstrating time complexity.
+- The Logic: Runs concurrent sorting algorithms (Quick vs Bubble) to visualize Big-O performance diferences.
+- The Stack: JavaScript, Canvas API, Async Algorithms
+- **[Play the live demo](https://lushosly.github.io/algo-race/)**
+- **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
+
 ### **[Galactic Conquest](https://github.com/Lushosly/tactical-tic-tac-toe)**: A strategic space combat simulation featuring a Self-Learning Alien AI.
 - The Logic: The CPU implements reinforcement learning to analyze battlefield states, serializing match history to JSON to "remember" and counter player tactics.
 - The Stack: Python (Backend Logic), HTML/JS (Frontend Visualization), OOP.
