@@ -5,25 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luis Rodriguez | Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- ===== HEADER ===== -->
   <header>
     <nav aria-label="Main Navigation">
       <div class="logo">LR<span class="dot">.</span></div>
-
-      <!-- Hamburger button for mobile -->
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
-      <!-- Navigation links -->
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -35,7 +27,6 @@
   </header>
 
   <main>
-    <!-- ===== HERO SECTION ===== -->
     <section id="hero">
       <div class="hero-content">
         <p class="mono-text">Hi, my name is</p>
@@ -52,7 +43,6 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS SECTION ===== -->
     <section id="skills">
       <h2>Technical Arsenal</h2>
       <div class="skills-grid">
@@ -64,7 +54,7 @@
         <div class="skill-card">
           <i class="fa-solid fa-brain"></i>
           <h3>AI & Algorithms</h3>
-          <p>Reinforcement Learning (Q-Learning), Heuristic Search, Linear Regression</p>
+          <p>Reinforcement Learning, Heuristic Search, Linear Regression, Q-Learning</p>
         </div>
         <div class="skill-card">
           <i class="fa-solid fa-code"></i>
@@ -79,24 +69,23 @@
       </div>
     </section>
 
-    <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects">
       <h2>Featured Engineering</h2>
       <div class="projects-grid">
 
-        <!-- Project 1: TradeView Analytics -->
+        <!-- 1. TradeView -->
         <article class="project-card featured">
           <div class="project-header">
             <div class="folder-icon"><i class="fa-solid fa-chart-area"></i></div>
             <div class="project-links">
-              <a href="https://github.com/lushosly/tradeview" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
-              <a href="https://tradeview-lusho.streamlit.app" target="_blank" title="Launch Dashboard"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/lushosly/tradeview" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://tradeview-lusho.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
           </div>
-          <h3>TradeView Pro</h3>
+          <h3>TradeView Analytics</h3>
           <p>
-            An institutional-grade financial dashboard built with <strong>Python & Streamlit</strong>. 
-            It processes real-time market data to visualize price action, calculate technical indicators (Bollinger Bands, RSI), and generate AI-driven trend forecasts using Linear Regression.
+            An institutional-grade financial dashboard built with **Python**. 
+            It visualizes real-time market data, calculates technical indicators (Bollinger Bands, RSI), and generates AI-driven trend forecasts using Linear Regression.
           </p>
           <ul class="tech-stack">
             <li>Python</li>
@@ -106,19 +95,19 @@
           </ul>
         </article>
 
-        <!-- Project 2: Galactic Conquest -->
+        <!-- 2. Galactic Conquest -->
         <article class="project-card">
           <div class="project-header">
             <div class="folder-icon"><i class="fa-solid fa-rocket"></i></div>
             <div class="project-links">
-              <a href="https://github.com/lushosly/tactical-tic-tac-toe" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
-              <a href="https://lushosly.github.io/tactical-tic-tac-toe/" target="_blank" title="Play Live Demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://github.com/lushosly/tactical-tic-tac-toe" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://lushosly.github.io/tactical-tic-tac-toe/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
           </div>
           <h3>Galactic Conquest AI</h3>
           <p>
             A strategic combat simulation featuring a <strong>Self-Learning Alien AI</strong>. 
-            The CPU agent implements <strong>Reinforcement Learning (Q-Learning)</strong> to analyze battlefield states, serializing match history to JSON to adapt strategies against the player.
+            The CPU agent implements <strong>Reinforcement Learning (Q-Learning)</strong> to analyze battlefield states, serializing match history to JSON to adapt strategies.
           </p>
           <ul class="tech-stack">
             <li>Python (OOP)</li>
@@ -128,10 +117,53 @@
           </ul>
         </article>
 
+        <!-- 3. Quant-3D -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="folder-icon"><i class="fa-solid fa-cube"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/lushosly/option-matrix" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://option-matrix-lusho.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Quant-3D Option Matrix</h3>
+          <p>
+            A Financial Engineering tool that visualizes the **Black-Scholes Model**. 
+            It solves differential equations to calculate Option Greeks and renders a 3D Volatility Surface to analyze price sensitivity in real-time.
+          </p>
+          <ul class="tech-stack">
+            <li>Python</li>
+            <li>SciPy / NumPy</li>
+            <li>Financial Math</li>
+            <li>3D Viz</li>
+          </ul>
+        </article>
+
+        <!-- 4. Algo-Race -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="folder-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/lushosly/algo-race" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://lushosly.github.io/algo-race/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Algo-Race Engine</h3>
+          <p>
+            A real-time algorithm visualization engine. 
+            Runs concurrent sorting instances (Quick vs Bubble) to visually demonstrate **Time Complexity (Big-O)** and computational efficiency differences.
+          </p>
+          <ul class="tech-stack">
+            <li>JavaScript</li>
+            <li>Algorithms</li>
+            <li>Big-O Logic</li>
+            <li>Canvas API</li>
+          </ul>
+        </article>
+
       </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
     <section id="contact">
       <h2>Get In Touch</h2>
       <p>
