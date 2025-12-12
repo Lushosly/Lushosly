@@ -20,13 +20,13 @@ I'm a Software Engineer with a B.Sc. in **Computer Science** and an **MBA in Fin
 - **[Launch Live Dashboard](https://tradeview-lusho.streamlit.app/#linear-regression-trend-projection)**
 - **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
 
-### **[Quant-3D Option Matrix](https://github.com/Lushosly/tactical-tic-tac-toe)**: A financial engineering tool visualizing the Black-Scholes Model.
+### **[Quant-3D Option Matrix](https://github.com/Lushosly/option-matrix)**: A financial engineering tool visualizing the Black-Scholes Model.
 - The Logic: Solves differential equations to calculate option greeks and renders a 3D volatility surface.
 - The Stack: Python, SciPy, Numpy, Plotly 3D
 - **[Launch Live Dashboard](https://option-matrix-lusho.streamlit.app/)**
 - **_Tip: Cmd ⌘ + Click (macOS) or Ctrl + Click (Windows/Linux) to open in a new tab._**
 
-### **[Algo-Race Engine](https://github.com/Lushosly/tactical-tic-tac-toe)**: A real-time algorithm visualizer demonstrating time complexity.
+### **[Algo-Race Engine](https://github.com/Lushosly/algo-race)**: A real-time algorithm visualizer demonstrating time complexity.
 - The Logic: Runs concurrent sorting algorithms (Quick vs Bubble) to visualize Big-O performance diferences.
 - The Stack: JavaScript, Canvas API, Async Algorithms
 - **[Play the live demo](https://lushosly.github.io/algo-race/)**
