@@ -21,7 +21,7 @@ let letter = "";
   if (letter.length === currentText.length) {
     count++;
     index = 0;
-    // Pause before deleting or moving to next word (simplified for loop)
+    // Pause before deleting or moving to next word (loop)
     setTimeout(type, 2000); 
   } else {
     setTimeout(type, 100);
@@ -47,7 +47,7 @@ document.querySelectorAll("nav ul li a").forEach(link => {
   });
 });
 
-// Smooth Scroll for older browsers (optional, CSS scroll-behavior usually handles this)
+// Smooth Scroll for older browsers
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
